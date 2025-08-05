@@ -2,7 +2,7 @@ import { SiteContent } from '../types/cms';
 
 export const defaultSiteContent: SiteContent = {
   hero: {
-    title: "Bringing Power and Stability to Your World",
+    title: "Bringing Power and\nReliability to Your World",
     subtitle: "Tayyar Electricals",
     description: "Expert solutions for your electrical wiring, installation, and repair needs.",
     ctaText: "Get Free Quote",
