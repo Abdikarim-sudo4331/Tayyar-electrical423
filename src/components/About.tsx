@@ -1,37 +1,11 @@
 import React from 'react';
 import { Award, Shield, Users, Lightbulb, CheckCircle, Star } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const About: React.FC = () => {
-  const credentials = [
-    { 
-      icon: Award, 
-      title: "Licensed Electrician", 
-      desc: "Fully licensed and certified electrical contractor with state certification"
-    },
-    { 
-      icon: Shield, 
-      title: "Insured & Bonded", 
-      desc: "Comprehensive insurance coverage and bonding for your peace of mind"
-    },
-    { 
-      icon: Users, 
-      title: "Experienced Team", 
-      desc: "15+ years of experience in residential and commercial electrical work"
-    },
-    { 
-      icon: Lightbulb, 
-      title: "Code Compliant", 
-      desc: "All work meets or exceeds current electrical codes and safety standards"
-    }
-  ];
-
-  const values = [
-    "Safety is our top priority in every project",
-    "Quality workmanship with attention to detail",
-    "Transparent pricing with no hidden costs",
-    "Reliable service and timely project completion",
-    "Ongoing support and maintenance services"
-  ];
+  const siteContent = useSiteContent();
+  
+  const iconMap = [Award, Shield, Users, Lightbulb];
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -40,25 +14,17 @@ const About: React.FC = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-              About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Tayyar Electricals</span>
+              {siteContent.about.title.split(' ').slice(0, 1).join(' ')} <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{siteContent.about.title.split(' ').slice(1).join(' ')}</span>
             </h2>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Tayyar Electricals Limited (TEL) is a registered Electrical Engineering company 
-              based in Nairobi, Kenya. TEL has been involved in many projects varying in 
-              magnitude, type and complexity.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-              We have gained experience and confidence over the years through thorough handling 
-              and successful completion of all our projects, both in the private and public sectors. 
-              Our operations have covered construction and installation works for diverse industrial 
-              concerns as well as multistory commercial buildings and residential complexes. In addition, 
-              we have a fully-fledged maintenance department serving domestic and commercial needs.
-            </p>
+            {siteContent.about.description.map((paragraph, index) => (
+              <p key={index} className={`text-gray-600 leading-relaxed ${index === 0 ? 'text-xl mb-8' : 'text-lg mb-10'}`}>
+                {paragraph}
+              </p>
+            ))}
 
             <div className="space-y-4 mb-10">
-              {values.map((value, index) => (
+              {siteContent.about.values.map((value, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700 leading-relaxed">{value}</span>
@@ -66,11 +32,11 @@ const About: React.FC = () => {
               ))}
             </div>
 
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+            {siteContent.about.description.length > 2 && <p className="text-lg text-gray-600 mb-10 leading-relaxed">
               We believe that the ensuing benefits of our enhanced efficiency shall be reflected 
               by quicker and more accurate response to inquiries and lower costs due to optimum 
               material and time utilization. All of which we tailor to our esteemed clients.
-            </p>
+            </p>}
 
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -123,19 +89,19 @@ const About: React.FC = () => {
 
         {/* Credentials Grid */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {credentials.map((cred, index) => (
+          {siteContent.about.credentials.map((cred, index) => (
             <div 
               key={index} 
               className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 text-center border border-gray-100 hover:shadow-md hover:border-gray-200 transition-all duration-300 hover:-translate-y-1"
             >
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <cred.icon className="w-8 h-8 text-white" />
+                {React.createElement(iconMap[index % iconMap.length], { className: "w-8 h-8 text-white" })}
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-lg">
                 {cred.title}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                {cred.desc}
+                {cred.description}
               </p>
             </div>
           ))}

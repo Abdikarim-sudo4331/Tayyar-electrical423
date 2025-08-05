@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Zap, Menu, X } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Header: React.FC = () => {
+  const siteContent = useSiteContent();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -29,13 +31,13 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3 group cursor-pointer">
             <img 
-              src="/Tayyar logo.jpg" 
-              alt="Tayyar Electricals Logo" 
+              src={siteContent.company.logo} 
+              alt={`${siteContent.company.name} Logo`} 
               className="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-200"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-gray-900">
-                Tayyar Electricals
+                {siteContent.company.name}
               </span>
             </div>
           </div>

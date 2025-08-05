@@ -1,39 +1,9 @@
 import React from 'react';
 import { Building, Users, Zap, Calendar, ArrowUpRight, MapPin } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Projects: React.FC = () => {
-  const projects = [
-    {
-      title: "Sunrise Apartments",
-      location: "Downtown District",
-      units: 120,
-      year: "2024",
-      image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Complete electrical installation for a 12-story luxury apartment complex featuring smart home integration and energy-efficient LED lighting throughout.",
-      features: ["Smart Home Wiring", "Energy Efficient Systems", "Emergency Backup Power", "EV Charging Stations"],
-      status: "Completed"
-    },
-    {
-      title: "Garden View Residences",
-      location: "Suburban Area",
-      units: 80,
-      year: "2024", 
-      image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Comprehensive electrical renovation and upgrade for an existing apartment building, including panel upgrades and modern fixture installations.",
-      features: ["Panel Upgrades", "Modern Fixtures", "Safety Compliance", "Tenant Coordination"],
-      status: "In Progress"
-    },
-    {
-      title: "University Commons",
-      location: "University District",
-      units: 200,
-      year: "2023",
-      image: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Large-scale electrical infrastructure for student housing complex with high-speed internet wiring and study area lighting optimization.",
-      features: ["High-Speed Data Wiring", "Study Area Lighting", "Common Area Systems", "Maintenance Planning"],
-      status: "Completed"
-    }
-  ];
+  const siteContent = useSiteContent();
 
   const getStatusColor = (status: string) => {
     return status === 'Completed' 
@@ -55,7 +25,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="space-y-16">
-          {projects.map((project, index) => (
+          {siteContent.projects.map((project, index) => (
             <div
               key={index}
               className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}

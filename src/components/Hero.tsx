@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Zap, Shield, Award } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Hero: React.FC = () => {
+  const siteContent = useSiteContent();
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
@@ -64,17 +66,15 @@ const Hero: React.FC = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-            Bringing Power and
+            {siteContent.hero.title.split('\n')[0] || 'Bringing Power and'}
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Stability to Your World
+              {siteContent.hero.title.split('\n')[1] || 'Stability to Your World'}
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed font-light max-w-3xl mx-auto">
-            Expert solutions for your electrical wiring,
-            <br />
-            installation, and repair needs.
+            {siteContent.hero.description}
           </p>
 
           {/* Electrical Plug Illustration */}
@@ -176,14 +176,14 @@ const Hero: React.FC = () => {
               onClick={scrollToContact}
               className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-1"
             >
-              Get Free Quote
+              {siteContent.hero.ctaText}
               <ArrowRight className="w-5 h-5 ml-2 inline-block group-hover:translate-x-1 transition-transform duration-200" />
             </button>
             <button
               onClick={scrollToServices}
               className="group bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
             >
-              View Services
+              {siteContent.hero.ctaSecondaryText}
             </button>
           </div>
 

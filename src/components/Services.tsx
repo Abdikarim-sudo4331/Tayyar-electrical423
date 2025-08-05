@@ -1,37 +1,18 @@
 import React from 'react';
 import { Zap, Wrench, Shield, Users, ArrowRight, Home, Building, Lightbulb } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Services: React.FC = () => {
-  const services = [
-    {
-      icon: Zap,
-      title: "Residential & Commercial",
-      description: "Comprehensive electrical installation services for residential apartments, commercial buildings, shopping malls, and hospitals & health facilities.",
-      features: ["Residential Apartments", "Commercial Buildings", "Shopping Malls", "Hospitals & Health Facilities"],
-      color: "blue"
-    },
-    {
-      icon: Wrench,
-      title: "Industrial & Infrastructure",
-      description: "Specialized electrical installations for data centers, factories, warehouses, and learning institutions with advanced power systems.",
-      features: ["Data Centers", "Factories", "Warehouses", "Learning Institutions"],
-      color: "green"
-    },
-    {
-      icon: Shield,
-      title: "Power Systems & Substations",
-      description: "High voltage and low voltage substation installations, airfield lighting systems, and power reticulation for estates, towns & cities.",
-      features: ["HV & LV Substations", "Airfield Lighting (AGL)", "Power Reticulations", "Estate Power Systems"],
-      color: "orange"
-    },
-    {
-      icon: Users,
-      title: "Maintenance & Support",
-      description: "Fully-fledged maintenance department serving domestic and commercial needs with comprehensive support services.",
-      features: ["Preventive Maintenance", "Emergency Repairs", "Domestic Services", "Commercial Support"],
-      color: "purple"
-    }
-  ];
+  const siteContent = useSiteContent();
+  
+  const iconMap: { [key: string]: any } = {
+    blue: Zap,
+    green: Wrench,
+    orange: Shield,
+    purple: Users,
+    red: Home,
+    yellow: Lightbulb
+  };
 
   const getColorClasses = (color: string) => {
     const colors = {
@@ -77,8 +58,9 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {services.map((service, index) => {
+          {siteContent.services.map((service, index) => {
             const colorClasses = getColorClasses(service.color);
+            const IconComponent = iconMap[service.color] || Zap;
             return (
               <div
                 key={index}
@@ -86,7 +68,7 @@ const Services: React.FC = () => {
               >
                 <div className="flex items-start space-x-6 mb-6">
                   <div className={`w-16 h-16 bg-gradient-to-br ${colorClasses.bg} rounded-2xl flex items-center justify-center flex-shrink-0`}>
-                    <service.icon className="w-8 h-8 text-white" />
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">

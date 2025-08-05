@@ -1,14 +1,9 @@
 import React from 'react';
 import { Handshake, Award, Globe, Users } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Partners: React.FC = () => {
-  const partners = [
-    {
-      name: "Partner Network",
-      logo: "/partners.PNG", 
-      description: "Our trusted partner ecosystem"
-    }
-  ];
+  const siteContent = useSiteContent();
 
   const partnershipBenefits = [
     {
@@ -49,7 +44,7 @@ const Partners: React.FC = () => {
         {/* Partner Logos */}
         <div className="mb-20">
           <div className="flex justify-center max-w-2xl mx-auto">
-            {partners.map((partner, index) => (
+            {siteContent.partners.map((partner, index) => (
               <div 
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"

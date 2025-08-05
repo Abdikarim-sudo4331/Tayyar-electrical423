@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Contact: React.FC = () => {
+  const siteContent = useSiteContent();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -54,7 +56,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-blue-600 font-medium">+254 768 817662</p>
+                    <p className="text-blue-600 font-medium">{siteContent.contact.phone}</p>
                     <p className="text-sm text-gray-600">Available 24/7 for emergencies</p>
                   </div>
                 </div>
@@ -65,7 +67,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                    <p className="text-green-600 font-medium">info@tayyarelectricals.com</p>
+                    <p className="text-green-600 font-medium">{siteContent.contact.email}</p>
                     <p className="text-sm text-gray-600">We respond within 2 hours</p>
                   </div>
                 </div>
@@ -76,8 +78,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Service Area</h4>
-                    <p className="text-purple-600 font-medium">Al Falaq Building S1 3rd Street</p>
-                    <p className="text-sm text-gray-600">Eastleigh Nairobi Kenya</p>
+                    <p className="text-purple-600 font-medium">{siteContent.contact.address.split(',')[0]}</p>
+                    <p className="text-sm text-gray-600">{siteContent.contact.address.split(',').slice(1).join(',').trim()}</p>
                   </div>
                 </div>
 
@@ -87,13 +89,13 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Business Hours</h4>
-                    <p className="text-orange-600 font-medium">Mon-Fri: 7AM-6PM</p>
+                    <p className="text-orange-600 font-medium">{siteContent.contact.businessHours}</p>
                     <p className="text-sm text-gray-600">Emergency service available</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+              {siteContent.contact.emergencyAvailable && <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-100">
                 <h4 className="font-bold text-gray-900 mb-2">Emergency Service</h4>
                 <p className="text-sm text-gray-600 mb-4">
                   24/7 emergency electrical services available for urgent repairs and safety issues.
@@ -101,7 +103,7 @@ const Contact: React.FC = () => {
                 <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full font-semibold text-sm hover:from-red-600 hover:to-red-700 transition-all duration-200">
                   Call Emergency Line
                 </button>
-              </div>
+              </div>}
             </div>
           </div>
 

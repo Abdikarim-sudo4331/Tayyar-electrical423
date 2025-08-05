@@ -1,7 +1,10 @@
 import React from 'react';
 import { Zap, Mail, Phone, MapPin, Facebook, Linkedin } from 'lucide-react';
+import { useSiteContent } from '../hooks/useSiteContent';
 
 const Footer: React.FC = () => {
+  const siteContent = useSiteContent();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
@@ -14,7 +17,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-white">
-                  Tayyar Electricals
+                  {siteContent.company.name}
                 </span>
               </div>
             </div>
@@ -27,15 +30,15 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-4 h-4" />
-                <span>info@tayyarelectricals.com</span>
+                <span>{siteContent.contact.email}</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-4 h-4" />
-                <span>+254 768 817662</span>
+                <span>{siteContent.contact.phone}</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="w-4 h-4" />
-                <span>Al Falaq Building S1 3rd Street, Eastleigh Nairobi Kenya</span>
+                <span>{siteContent.contact.address}</span>
               </div>
             </div>
             
@@ -43,7 +46,7 @@ const Footer: React.FC = () => {
               <h4 className="text-lg font-bold text-white mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://web.facebook.com/Tayyar.elecric"
+                  href={siteContent.company.socialMedia.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 hover:scale-110"
@@ -51,7 +54,7 @@ const Footer: React.FC = () => {
                   <Facebook className="w-5 h-5 text-white" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/tayyar-electricals-623008259/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ke"
+                  href={siteContent.company.socialMedia.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-800 rounded-xl flex items-center justify-center hover:from-blue-800 hover:to-blue-900 transition-all duration-200 hover:scale-110"
@@ -112,7 +115,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 Tayyar Electricals. All rights reserved. Licensed Electrical Contractor.
+              © 2024 {siteContent.company.name}. All rights reserved. Licensed Electrical Contractor.
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
