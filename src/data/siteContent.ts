@@ -73,37 +73,70 @@ export const defaultSiteContent: SiteContent = {
   ],
   projects: [
     {
-      id: "sunrise-apartments",
-      title: "Sunrise Apartments",
-      location: "Downtown District",
-      units: 120,
+      id: "mama-sarah-apartments",
+      title: "Proposed Residential Apartments on Plot No. LRN036/VII/201",
+      location: "Nairobi",
+      units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Complete electrical installation for a 12-story luxury apartment complex featuring smart home integration and energy-efficient LED lighting throughout.",
-      features: ["Smart Home Wiring", "Energy Efficient Systems", "Emergency Backup Power", "EV Charging Stations"],
-      status: "Completed"
-    },
-    {
-      id: "garden-view-residences",
-      title: "Garden View Residences",
-      location: "Suburban Area",
-      units: 80,
-      year: "2024",
-      image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Comprehensive electrical renovation and upgrade for an existing apartment building, including panel upgrades and modern fixture installations.",
-      features: ["Panel Upgrades", "Modern Fixtures", "Safety Compliance", "Tenant Coordination"],
+      image: "/Mama sarah.jpg",
+      description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: "In Progress"
     },
     {
-      id: "university-commons",
-      title: "University Commons",
-      location: "University District",
-      units: 200,
-      year: "2023",
-      image: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Large-scale electrical infrastructure for student housing complex with high-speed internet wiring and study area lighting optimization.",
-      features: ["High-Speed Data Wiring", "Study Area Lighting", "Common Area Systems", "Maintenance Planning"],
-      status: "Completed"
+      id: "tamam-heights",
+      title: "Tamam Heights",
+      location: "Nairobi",
+      units: 0,
+      year: "2024",
+      image: "/Tamam heights.jpg",
+      description: "Mixed-use development containing shops and apartments with comprehensive electrical systems. Client: Abdi Salam & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: "In Progress"
+    },
+    {
+      id: "rodwa-towers",
+      title: "Rodwa Towers",
+      location: "Nairobi",
+      units: 0,
+      year: "2024",
+      image: "/Nasri towers.jpg",
+      description: "Mixed-use development containing shops, madrasas, mosques, offices and apartments. Client: Sheikh Ali & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: "In Progress"
+    },
+    {
+      id: "amki-developments",
+      title: "Proposed Amki Developments",
+      location: "Parklands",
+      units: 0,
+      year: "2024",
+      image: "/Tamam heights.jpg",
+      description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
+      status: "Planning"
+    },
+    {
+      id: "donholm-heights",
+      title: "Proposed Donholm Heights",
+      location: "Donholm",
+      units: 0,
+      year: "2024",
+      image: "/Donholm heights.jpg",
+      description: "Residential apartment development in Donholm with comprehensive electrical infrastructure and modern amenities.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: "Planning"
+    },
+    {
+      id: "nasri-towers",
+      title: "Proposed Nasri Towers",
+      location: "Ushirika",
+      units: 0,
+      year: "2024",
+      image: "/Nasri towers.jpg",
+      description: "Mixed-use development at Ushirika containing apartments and a supermarket with advanced electrical systems.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: "Planning"
     }
   ],
   contact: {
