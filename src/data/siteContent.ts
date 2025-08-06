@@ -137,6 +137,17 @@ export const defaultSiteContent: SiteContent = {
       description: "Mixed-use development at Ushirika containing apartments and a supermarket with advanced electrical systems.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: "Planning"
+    },
+    {
+      id: "riverpointe-apartment",
+      title: "Proposed Riverpointe Apartment",
+      location: "Lavington",
+      units: 0,
+      year: "2024",
+      image: "/Tamam heights.jpg",
+      description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: "Planning"
     }
   ],
   contact: {
