@@ -78,7 +78,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Nairobi",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Mama sarah.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
@@ -89,7 +89,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Nairobi",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/298611/pexels-photo-298611.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Tamam heights.jpg",
       description: "Mixed-use development containing shops and apartments with comprehensive electrical systems. Client: Abdi Salam & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
@@ -100,7 +100,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Nairobi",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Rowda towers.jpg",
       description: "Mixed-use development containing shops, madrasas, mosques, offices and apartments. Client: Sheikh Ali & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
@@ -111,7 +111,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Parklands",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Amki developers.jpg",
       description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
       status: ""
@@ -122,7 +122,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Donholm",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/257699/pexels-photo-257699.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Donholm heights.jpg",
       description: "Residential apartment development in Donholm with comprehensive electrical infrastructure and modern amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
@@ -133,7 +133,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Ushirika",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/257701/pexels-photo-257701.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Nasri towers.jpg",
       description: "Mixed-use development at Ushirika containing apartments and a supermarket with advanced electrical systems.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
@@ -144,7 +144,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Lavington",
       units: 0,
       year: "2024",
-      image: "https://images.pexels.com/photos/257698/pexels-photo-257698.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Riverpoint-Lavington.jpg",
       description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
