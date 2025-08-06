@@ -52,7 +52,7 @@ const About: React.FC = () => {
               {/* Main Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/298611/pexels-photo-298611.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  src="/Engineers.jpg" 
                   alt="Professional electrician at work"
                   className="w-full h-96 object-cover"
                 />
