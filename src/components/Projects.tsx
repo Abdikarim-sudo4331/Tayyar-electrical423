@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-80 object-contain bg-gray-50 hover:scale-105 transition-transform duration-500"
                   />
                   
                   {/* Status Badge */}
