@@ -144,7 +144,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Lavington",
       units: 0,
       year: "2024",
-      image: "/Riverpointe-lavington.jpg",
+      image: "/Riverpoint-Lavington.jpg",
       description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""

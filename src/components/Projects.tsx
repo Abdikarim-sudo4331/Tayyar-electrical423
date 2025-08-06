@@ -36,7 +36,18 @@ const Projects: React.FC = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-80 object-contain bg-gray-50 hover:scale-105 transition-transform duration-500"
+                    className="w-full h-80 object-cover bg-gray-50 hover:scale-105 transition-transform duration-500"
+                    style={{ 
+                      objectPosition: 'center',
+                      maxWidth: '100%',
+                      height: '320px'
+                    }}
+                    onError={(e) => {
+                      console.log('Image failed to load:', project.image);
+                      e.currentTarget.style.display = 'block';
+                      e.currentTarget.style.backgroundColor = '#f3f4f6';
+                      e.currentTarget.alt = 'Image not available';
+                    }}
                   />
                   
                   {/* Status Badge */}
