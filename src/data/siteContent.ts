@@ -100,7 +100,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Nairobi",
       units: 0,
       year: "2024",
-      image: "/Nasri towers.jpg",
+      image: "/Rowda towers.jpg",
       description: "Mixed-use development containing shops, madrasas, mosques, offices and apartments. Client: Sheikh Ali & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: "In Progress"
@@ -111,7 +111,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Parklands",
       units: 0,
       year: "2024",
-      image: "/Tamam heights.jpg",
+      image: "/Amki developers.jpg",
       description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
       status: "Planning"
@@ -144,7 +144,7 @@ export const defaultSiteContent: SiteContent = {
       location: "Lavington",
       units: 0,
       year: "2024",
-      image: "/Tamam heights.jpg",
+      image: "/Riverpoint-lavington.jpg",
       description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: "Planning"
