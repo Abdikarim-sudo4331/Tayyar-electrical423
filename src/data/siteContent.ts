@@ -81,7 +81,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Mama sarah.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "In Progress"
+      status: ""
     },
     {
       id: "tamam-heights",
@@ -92,7 +92,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Tamam heights.jpg",
       description: "Mixed-use development containing shops and apartments with comprehensive electrical systems. Client: Abdi Salam & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "In Progress"
+      status: ""
     },
     {
       id: "rodwa-towers",
@@ -103,7 +103,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Rowda towers.jpg",
       description: "Mixed-use development containing shops, madrasas, mosques, offices and apartments. Client: Sheikh Ali & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "In Progress"
+      status: ""
     },
     {
       id: "amki-developments",
@@ -114,7 +114,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Amki developers.jpg",
       description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
-      status: "Planning"
+      status: ""
     },
     {
       id: "donholm-heights",
@@ -125,7 +125,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Donholm heights.jpg",
       description: "Residential apartment development in Donholm with comprehensive electrical infrastructure and modern amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "Planning"
+      status: ""
     },
     {
       id: "nasri-towers",
@@ -136,7 +136,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Nasri towers.jpg",
       description: "Mixed-use development at Ushirika containing apartments and a supermarket with advanced electrical systems.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "Planning"
+      status: ""
     },
     {
       id: "riverpointe-apartment",
@@ -144,10 +144,10 @@ export const defaultSiteContent: SiteContent = {
       location: "Lavington",
       units: 0,
       year: "2024",
-      image: "/Riverpoint-lavington.jpg",
+      image: "/Riverpointe-lavington.jpg",
       description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: "Planning"
+      status: ""
     }
   ],
   contact: {
