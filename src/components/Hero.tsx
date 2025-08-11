@@ -193,7 +193,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Image Slider */}
-          <div className="mb-16 max-w-4xl mx-auto">
+          <div className="mt-16 mb-8 max-w-4xl mx-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <div 
                 className="flex transition-transform duration-500 ease-in-out" 
