@@ -74,14 +74,14 @@ export const defaultSiteContent: SiteContent = {
   projects: [
     {
       id: "mama-sarah-apartments",
-      title: "Proposed Residential Apartments on Plot No. LRN036/VII/201",
+      title: "Residential Apartments on Plot No. LRN036/VII/201",
       location: "Nairobi",
       units: 0,
       year: "2024",
       image: "/Mama sarah.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "tamam-heights",
@@ -92,29 +92,29 @@ export const defaultSiteContent: SiteContent = {
       image: "/Tamam heights.jpg",
       description: "Mixed-use development containing shops and apartments with comprehensive electrical systems. Client: Abdi Salam & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "amki-developments",
-      title: "Proposed Amki Developments",
+      title: "Amki Developments",
       location: "Parklands",
       units: 0,
       year: "2024",
       image: "/Amki developers.jpg",
       description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "nasri-towers",
-      title: "Proposed Nasri Towers",
+      title: "Nasri Towers",
       location: "Ushirika",
       units: 0,
       year: "2024",
       image: "/Nasri towers.jpg",
       description: "Mixed-use development at Ushirika containing apartments and a supermarket with advanced electrical systems.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "khaleel-towers",
@@ -125,7 +125,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Khaleel towers- Parklands.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "nomad-heights",
@@ -136,7 +136,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Nomad Heights- Eastleigh.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "sagal-heights",
@@ -147,7 +147,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Sagal Heights- Juja road.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
     {
       id: "tamaam-ii-towers",
@@ -158,7 +158,7 @@ export const defaultSiteContent: SiteContent = {
       image: "/Tamaam II Towers- Eastleigh.jpg",
       description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
+      status: "Completed"
     },
   ],
   contact: {
