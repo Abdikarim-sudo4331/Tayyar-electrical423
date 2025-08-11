@@ -116,6 +116,50 @@ export const defaultSiteContent: SiteContent = {
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
     },
+    {
+      id: "khaleel-towers",
+      title: "Khaleel Towers",
+      location: "Parklands",
+      units: 0,
+      year: "2024",
+      image: "/Khaleel towers- Parklands.jpg",
+      description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: ""
+    },
+    {
+      id: "nomad-heights",
+      title: "Nomad Heights",
+      location: "Eastleigh",
+      units: 0,
+      year: "2024",
+      image: "/Nomad Heights- Eastleigh.jpg",
+      description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: ""
+    },
+    {
+      id: "sagal-heights",
+      title: "Sagal Heights",
+      location: "Juja road",
+      units: 0,
+      year: "2024",
+      image: "/Sagal Heights- Juja road.jpg",
+      description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: ""
+    },
+    {
+      id: "tamaam-ii-towers",
+      title: "Tamaam II Towers",
+      location: "Eastleigh",
+      units: 0,
+      year: "2024",
+      image: "/Tamaam II Towers- Eastleigh.jpg",
+      description: "Comprehensive electrical installation for residential apartments with advanced security and lighting systems. Client: Mama Sarah & Others.",
+      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
+      status: ""
+    },
   ],
   contact: {
     phone: "+254 768 817662",
