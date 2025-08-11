@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Zap, Shield, Award } from 'lucide-react';
+import { ArrowRight, Zap, Shield, Award, MessageCircle } from 'lucide-react';
 import { useSiteContent } from '../hooks/useSiteContent';
 
 const Hero: React.FC = () => {
@@ -63,6 +63,12 @@ const Hero: React.FC = () => {
 
   const scrollToServices = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const openWhatsApp = () => {
+    const phoneNumber = siteContent.contact.phone.replace(/\s+/g, '').replace('+', '');
+    const message = encodeURIComponent('Hello! I would like to inquire about your electrical services.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
   return (
@@ -176,7 +182,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16">
             <button
               onClick={scrollToContact}
               className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-1"
@@ -189,6 +195,13 @@ const Hero: React.FC = () => {
               className="group bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
             >
               {siteContent.hero.ctaSecondaryText}
+            </button>
+            <button
+              onClick={openWhatsApp}
+              className="group bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-600 hover:to-green-700 transition-all duration-200 hover:shadow-lg hover:shadow-green-500/25 hover:-translate-y-1 flex items-center space-x-2"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>WhatsApp Us</span>
             </button>
           </div>
 

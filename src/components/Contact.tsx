@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageCircle } from 'lucide-react';
 import { useSiteContent } from '../hooks/useSiteContent';
 
 const Contact: React.FC = () => {
@@ -30,6 +30,12 @@ const Contact: React.FC = () => {
     }));
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = siteContent.contact.phone.replace(/\s+/g, '').replace('+', '');
+    const message = encodeURIComponent('Hello! I would like to inquire about your electrical services.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -57,7 +63,16 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
                     <p className="text-blue-600 font-medium">{siteContent.contact.phone}</p>
-                    <p className="text-sm text-gray-600">Available 24/7 for emergencies</p>
+                    <div className="flex items-center space-x-2 mt-2">
+                      <p className="text-sm text-gray-600">Available 24/7 for emergencies</p>
+                      <button
+                        onClick={openWhatsApp}
+                        className="flex items-center space-x-1 px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs hover:bg-green-200 transition-colors duration-200"
+                      >
+                        <MessageCircle className="w-3 h-3" />
+                        <span>WhatsApp</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
 

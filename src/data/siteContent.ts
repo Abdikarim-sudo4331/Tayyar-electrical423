@@ -162,7 +162,7 @@ export const defaultSiteContent: SiteContent = {
     },
   ],
   contact: {
-    phone: "+254 768 817662",
+    phone: "+254 727 381169",
     email: "info@tayyarelectricals.com",
     address: "Al Falaq Building S1 3rd Street, Eastleigh Nairobi Kenya",
     businessHours: "Mon-Fri: 7AM-6PM",
