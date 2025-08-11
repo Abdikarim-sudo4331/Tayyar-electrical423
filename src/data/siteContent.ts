@@ -95,17 +95,6 @@ export const defaultSiteContent: SiteContent = {
       status: ""
     },
     {
-      id: "rodwa-towers",
-      title: "Rodwa Towers",
-      location: "Nairobi",
-      units: 0,
-      year: "2024",
-      image: "/Rowda towers.jpg",
-      description: "Mixed-use development containing shops, madrasas, mosques, offices and apartments. Client: Sheikh Ali & Others.",
-      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
-    },
-    {
       id: "amki-developments",
       title: "Proposed Amki Developments",
       location: "Parklands",
@@ -114,17 +103,6 @@ export const defaultSiteContent: SiteContent = {
       image: "/Amki developers.jpg",
       description: "Apartment development in Parklands where we serve as consultant in charge of design and supervision.",
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Intercom provisions", "Façade lighting"],
-      status: ""
-    },
-    {
-      id: "donholm-heights",
-      title: "Proposed Donholm Heights",
-      location: "Donholm",
-      units: 0,
-      year: "2024",
-      image: "/Donholm heights.jpg",
-      description: "Residential apartment development in Donholm with comprehensive electrical infrastructure and modern amenities.",
-      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
     },
     {
@@ -138,17 +116,6 @@ export const defaultSiteContent: SiteContent = {
       features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
       status: ""
     },
-    {
-      id: "riverpointe-apartment",
-      title: "Proposed Riverpointe Apartment",
-      location: "Lavington",
-      units: 0,
-      year: "2024",
-      image: "/Riverpoint-Lavington.jpg",
-      description: "Luxury suite apartments in Lavington with comprehensive electrical infrastructure and premium amenities.",
-      features: ["Small power & Lighting", "Earthing & Lightning protection", "Cable Management systems", "Motion detection in parking", "Structural cabling", "CCTV provisions", "TV point provisions", "Façade lighting"],
-      status: ""
-    }
   ],
   contact: {
     phone: "+254 768 817662",
