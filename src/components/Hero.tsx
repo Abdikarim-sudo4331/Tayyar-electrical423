@@ -26,11 +26,6 @@ const Hero: React.FC = () => {
       image: "/Chint 1.jpg",
       title: "Quality Components",
       description: "Premium electrical equipment and materials"
-    },
-    {
-      image: "/Chint catalogue.jpg",
-      title: "Product Range",
-      description: "Extensive catalogue of electrical solutions"
     }
   ];
 
