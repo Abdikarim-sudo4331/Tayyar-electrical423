@@ -26,6 +26,26 @@ const Hero: React.FC = () => {
       image: "/Backup generator.jpg",
       title: "Backup Generator",
       description: "Reliable backup power solutions for continuous operation"
+    },
+    {
+      image: "/Partners chint copy.jpg",
+      title: "Partner Chint",
+      description: "Strategic partnership with leading electrical equipment manufacturer"
+    },
+    {
+      image: "/Engineers 11 copy.jpg",
+      title: "Engineers 11",
+      description: "Professional electrical engineers working on complex installations"
+    },
+    {
+      image: "/Energy meters.jpg",
+      title: "Energy Meters",
+      description: "Advanced energy monitoring and measurement systems"
+    },
+    {
+      image: "/Backup generator.jpg",
+      title: "Backup Generator",
+      description: "Reliable backup power solutions for continuous operation"
     }
   ];
 
