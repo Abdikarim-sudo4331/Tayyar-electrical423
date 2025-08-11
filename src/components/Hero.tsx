@@ -8,19 +8,9 @@ const Hero: React.FC = () => {
   
   const slides = [
     {
-      image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      title: "Professional Wiring Installation",
-      description: "Complete electrical systems for apartment complexes"
-    },
-    {
       image: "/Engineers designs.jpg",
       title: "Engineering & Design",
       description: "Expert electrical system design and planning"
-    },
-    {
-      image: "/Engineers 11.jpg",
-      title: "Expert Team",
-      description: "Experienced engineers and technicians"
     },
     {
       image: "/Engineers.jpg",
