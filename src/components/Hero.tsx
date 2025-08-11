@@ -8,24 +8,24 @@ const Hero: React.FC = () => {
   
   const slides = [
     {
-      image: "/Engineers designs.jpg",
-      title: "Engineering & Design",
-      description: "Expert electrical system design and planning"
+      image: "/Partners chint copy.jpg",
+      title: "Partner Chint",
+      description: "Strategic partnership with leading electrical equipment manufacturer"
     },
     {
-      image: "/Engineers.jpg",
-      title: "Professional Engineers",
-      description: "Skilled electrical engineers at work"
+      image: "/Engineers 11 copy.jpg",
+      title: "Engineers 11",
+      description: "Professional electrical engineers working on complex installations"
     },
     {
-      image: "/Engineers designs - Copy.jpg",
-      title: "Technical Drawings",
-      description: "Detailed electrical system blueprints"
+      image: "/Energy meters.jpg",
+      title: "Energy Meters",
+      description: "Advanced energy monitoring and measurement systems"
     },
     {
-      image: "/Chint 1.jpg",
-      title: "Quality Components",
-      description: "Premium electrical equipment and materials"
+      image: "/Backup generator.jpg",
+      title: "Backup Generator",
+      description: "Reliable backup power solutions for continuous operation"
     }
   ];
 
