@@ -13,6 +13,11 @@ const Hero: React.FC = () => {
       description: "Strategic partnership with leading electrical equipment manufacturer"
     },
     {
+      image: "/Engineers 11 copy.jpg",
+      title: "Engineers 11",
+      description: "Professional electrical engineers working on complex installations"
+    },
+    {
       image: "/Energy meters.jpg",
       title: "Energy Meters",
       description: "Advanced energy monitoring and measurement systems"
@@ -41,11 +46,6 @@ const Hero: React.FC = () => {
       image: "/Chint 1.jpg",
       title: "Quality Components",
       description: "High-quality electrical components and equipment"
-    },
-    {
-      image: "/Riverpoint-Lavington.jpg",
-      title: "Riverpoint Lavington",
-      description: "Premium residential development with advanced electrical systems"
     }
   ];
 
