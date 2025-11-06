@@ -7,12 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy",
+    "firebase:login": "firebase login",
+    "firebase:init": "firebase init"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@octokit/rest": "^22.0.0",
     "@types/js-yaml": "^4.0.9",
+    "firebase": "^12.5.0",
     "js-yaml": "^4.1.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
